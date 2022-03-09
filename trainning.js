@@ -19,20 +19,17 @@ function Render({ data, classN, handleClick }) {
     )
 }
 
-
-
-
 function Component(props) {
     const [users, setUser] = React.useState([
-        { name: "Nguyễn Văn A", Age: 20 },
-        { name: "Nguyễn Văn B", Age: 21 },
-        { name: "Nguyễn Văn C", Age: 20 }
+        { name: "Nguyễn Văn A", Age: 19 },
+        { name: "Nguyễn Văn B", Age: 20 },
+        { name: "Nguyễn Văn C", Age: 21 }
     ])
 
     const [user2, setUser2] = React.useState([
-        { name: "Trần Văn A", Age: 26 },
-        { name: "Trần Văn B", Age: 27 },
-        { name: "Trần Văn C", Age: 28 }
+        { name: "Nguyễn Văn D", Age: 22 },
+        { name: "Nguyễn Văn E", Age: 23 },
+        { name: "Nguyễn Văn F", Age: 24 }
     ])
     const transReact = (index) => {
         const tt = user2.splice(index, 1)
@@ -57,8 +54,6 @@ function Component(props) {
 
     )
 }
-
-
 
 ReactDOM.render(
     <Component />, divTag);
